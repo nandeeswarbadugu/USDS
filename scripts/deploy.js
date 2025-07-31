@@ -16,9 +16,8 @@ async function main() {
   console.log("USDS Proxy deployed to:", proxy.address);
 
   // Call initialize via proxy
-  const proxyAsUSDS = await ethers.getContractAt("USDSV1", proxy.address);
-  await proxyAsUSDS.initialize("USDS Token", "USDS", 6, ethers.utils.parseUnits("1000000", 6));
-  console.log("USDS initialized");
+  
+  
 }
 
 main().catch((error) => {
